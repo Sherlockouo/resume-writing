@@ -1,4 +1,4 @@
-# Resume Writing Skill
+# 简历.Skill
 
 一站式简历助手 —— 解析、诊断、优化、按 JD 批量适配、导出 ATS 友好的 `.docx` / `.pdf`。
 
@@ -38,27 +38,27 @@ python scripts/run.py --resume 简历.pdf --jds-dir jds/ --out output/
 
 ### 参数说明
 
-| 参数 | 说明 |
-|---|---|
-| `--resume` | 原始简历，`.docx` / `.pdf` / `.json` |
-| `--jd` | 单个 JD 文件（与 `--jds-dir` 二选一） |
-| `--jds-dir` | JD 文件夹，每个 `.txt` 一个 JD |
-| `--out` | 输出目录 |
-| `--lang` | `zh` / `en`，默认 `zh` |
-| `--tone` | `formal` / `warm` / `startup`，求职信风格 |
-| `--skip-cover` | 不生成求职信 |
-| `--report` | 打印评分报告到 stderr |
+| 参数           | 说明                                      |
+| -------------- | ----------------------------------------- |
+| `--resume`     | 原始简历，`.docx` / `.pdf` / `.json`      |
+| `--jd`         | 单个 JD 文件（与 `--jds-dir` 二选一）     |
+| `--jds-dir`    | JD 文件夹，每个 `.txt` 一个 JD            |
+| `--out`        | 输出目录                                  |
+| `--lang`       | `zh` / `en`，默认 `zh`                    |
+| `--tone`       | `formal` / `warm` / `startup`，求职信风格 |
+| `--skip-cover` | 不生成求职信                              |
+| `--report`     | 打印评分报告到 stderr                     |
 
 ## 输出物
 
-| 文件 | 说明 |
-|---|---|
-| `parsed_resume.json` | 简历解析结果（供检查） |
-| `{姓名}_{JD}.docx` | 适配后的简历 |
-| `{姓名}_{JD}.pdf` | PDF 版本 |
-| `coverletter_{JD}.md` | 求职信草稿 |
-| `summary.csv` | 所有岗位的匹配评分汇总 |
-| `changes_log.md` | 修改记录 |
+| 文件                  | 说明                   |
+| --------------------- | ---------------------- |
+| `parsed_resume.json`  | 简历解析结果（供检查） |
+| `{姓名}_{JD}.docx`    | 适配后的简历           |
+| `{姓名}_{JD}.pdf`     | PDF 版本               |
+| `coverletter_{JD}.md` | 求职信草稿             |
+| `summary.csv`         | 所有岗位的匹配评分汇总 |
+| `changes_log.md`      | 修改记录               |
 
 ## 项目结构
 
